@@ -1,0 +1,127 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.sitemap {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto 27px;
+    padding: 0 20px;
+}
+.site-map {
+    height: 850px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.link_button {
+    fill: transparent;
+    stroke: #ed143d;
+    stroke-width: 3px;
+    text-align: center;
+    color: black;
+}
+.link_button:hover {
+    background: transparent;
+    background-color:#ffffff;
+}
+svg .link_button:hover text {
+    fill: #ae0202;
+    transition: all 0.3s ease-in-out 0s;
+}
+svg text {
+    font-weight: bold;
+    font-size: 22px;
+    font-size-adjust: 0.5;
+    fill: #222831;
+    stroke: none;
+    font-weight: normal;
+}
+.sitemap-line {
+    stroke:#ed143d;
+    stroke-width: 4px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 500px;
+    overflow: hidden;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* adjust opacity as needed */
+}
+.centered h3{
+    font-size: 2.4rem;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.editor-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+  
+.editor-btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ed143d;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+  
+.editor-btn a:hover {
+    background-color: #ae0202;
+}
+
+@media screen and (max-width: 767px) {
+    .sitemap {
+        margin-left: 10%;
+        padding: 0;
+    }
+    
+    .site-map {
+        height: auto;
+        margin: 0;
+        max-width: none;
+    }
+    
+    svg text {
+        font-size: 18px;
+    }
+    
+    .centered h3 {
+        font-size: 1.8rem;
+        letter-spacing: 15px;
+    }
+    
+    .editor-btn {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .sitemap {
+        margin-left: 15%;
+        padding: 0;
+    }
+}
